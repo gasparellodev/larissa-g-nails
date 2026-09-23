@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Larissa G. · Nail designer</title>
+<meta name="description" content="Larissa G., nail designer. Unhas em gel, nail art, pés, sobrancelhas e cílios com hora marcada. Monte seu pedido e agende pelo WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600&family=Tenor+Sans&display=swap" rel="stylesheet">
+<script src="./image-slot.js"></script>
+<style>
+html{scroll-behavior:smooth;background:#030303}
+body{margin:0;background:#030303;color:#f1ece5;font-family:'Schibsted Grotesk',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#f1ece5;text-decoration:none}
+a:hover{color:#d9b6a3}
+button,input{font:inherit;color:inherit}
+input::placeholder{color:#8a847c}
+::selection{background:#d9b6a3;color:#030303}
+:focus-visible{outline:1px solid #d9b6a3;outline-offset:4px}
+img{-webkit-user-drag:none}
+</style>
+</helmet>
+<div data-root="" style="position:relative;background:#030303;color:#f1ece5;overflow-x:clip;">
+
+<header data-intro="" data-intro-delay="700" style="position:fixed;top:0;left:0;right:0;z-index:30;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:18px max(20px,4vw);background:linear-gradient(to bottom,rgba(3,3,3,.8),rgba(3,3,3,0));">
+<a href="#retrato" style="font:400 14px/1 'Tenor Sans',sans-serif;letter-spacing:.34em;text-transform:uppercase;color:#f1ece5;">Larissa G.</a>
+<nav style="display:flex;align-items:center;gap:clamp(16px,2.4vw,36px);font:500 11px/1 'Schibsted Grotesk',sans-serif;letter-spacing:.22em;text-transform:uppercase;">
+<sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}">
+<a href="#trabalhos" style="color:#bdb6ad;">Trabalhos</a>
+<a href="#cardapio" style="color:#bdb6ad;">Cardápio</a>
+<a href="#duvidas" style="color:#bdb6ad;">Dúvidas</a>
+</sc-if>
+<a href="{{ bookHref }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;padding:12px 16px;border:1px solid rgba(241,236,229,.5);color:#f1ece5;transition:background .4s,color .4s;" style-hover="background:#f1ece5;color:#030303;">Agendar</a>
+</nav>
+</header>
+
+<section id="retrato" data-retrato="" data-screen-label="Retrato" style="position:relative;height:500vh;">
+<div style="position:sticky;top:0;height:100svh;overflow:hidden;background:#030303;">
+<div data-iris="" style="position:absolute;inset:0;">
+<div data-cam="" style="position:absolute;left:0;top:0;width:69.2vh;height:104vh;transform-origin:0 0;transform:translate3d(calc(68vw - 34.6vh),-2vh,0);will-change:transform;">
+<img src="assets/larissa-retrato.jpg" alt="Larissa G. de jaleco branco e luvas, retirando gel do pote com uma espátula" draggable="false" style="position:absolute;inset:0;width:100%;height:100%;display:block;user-select:none;">
+<div data-hots="" style="position:absolute;inset:0;">
+<button data-idx="1" onClick="{{ goShot }}" aria-label="Ver: Olhar" style="position:absolute;right:30%;top:21.5%;margin:-9px -9px 0 0;display:flex;flex-direction:row-reverse;align-items:center;gap:10px;background:none;border:0;padding:0;cursor:pointer;color:#f1ece5;"><span style="width:18px;height:18px;border-radius:50%;border:1px solid rgba(241,236,229,.9);display:grid;place-items:center;box-shadow:0 0 0 7px rgba(241,236,229,.07);"><span style="width:4px;height:4px;border-radius:50%;background:#f1ece5;"></span></span><span style="font:500 10px/1 'Schibsted Grotesk',sans-serif;letter-spacing:.24em;text-transform:uppercase;padding:7px 10px;background:rgba(3,3,3,.72);">Olhar</span></button>
+<button data-idx="2" onClick="{{ goShot }}" aria-label="Ver: Cuidado" style="position:absolute;left:24%;top:43%;margin:-9px 0 0 -9px;display:flex;align-items:center;gap:10px;background:none;border:0;padding:0;cursor:pointer;color:#f1ece5;"><span style="width:18px;height:18px;border-radius:50%;border:1px solid rgba(241,236,229,.9);display:grid;place-items:center;box-shadow:0 0 0 7px rgba(241,236,229,.07);background:rgba(3,3,3,.35);"><span style="width:4px;height:4px;border-radius:50%;background:#f1ece5;"></span></span><span style="font:500 10px/1 'Schibsted Grotesk',sans-serif;letter-spacing:.24em;text-transform:uppercase;padding:7px 10px;background:rgba(3,3,3,.72);">Cuidado</span></button>
+<button data-idx="3" onClick="{{ goShot }}" aria-label="Ver: Gel" style="position:absolute;left:43.2%;top:50.5%;margin:-9px 0 0 -9px;display:flex;align-items:center;gap:10px;background:none;border:0;padding:0;cursor:pointer;color:#f1ece5;"><span style="width:18px;height:18px;border-radius:50%;border:1px solid rgba(241,236,229,.9);display:grid;place-items:center;box-shadow:0 0 0 7px rgba(241,236,229,.07);background:rgba(3,3,3,.35);"><span style="width:4px;height:4px;border-radius:50%;background:#f1ece5;"></span></span><span style="font:500 10px/1 'Schibsted Grotesk',sans-serif;letter-spacing:.24em;text-transform:uppercase;padding:7px 10px;background:rgba(3,3,3,.72);">Gel</span></button>
+</div>
+</div>
+</div>
+<div aria-hidden="true" style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(to right,rgba(3,3,3,.9) 0%,rgba(3,3,3,.55) 32%,rgba(3,3,3,0) 58%),linear-gradient(to top,rgba(3,3,3,.95) 0%,rgba(3,3,3,.6) 32%,rgba(3,3,3,0) 58%);"></div>
+
+<div data-cap="0" style="position:absolute;left:max(20px,5vw);bottom:clamp(88px,12vh,140px);width:min(620px,calc(100vw - 76px));">
+<div data-intro="" data-intro-delay="0" style="display:flex;align-items:center;gap:14px;font:500 11px/1 'Schibsted Grotesk',sans-serif;letter-spacing:.3em;text-transform:uppercase;color:#d9b6a3;"><span style="width:28px;height:1px;background:#d9b6a3;"></span>Nail designer</div>
+<h1 data-hero-name="" data-intro="wipe" data-intro-delay="120" style="margin:20px 0 0;width:fit-content;font:400 clamp(38px,min(10.6vw,6.4vw + 12px),112px)/.92 'Tenor Sans',sans-serif;letter-spacing:.04em;text-transform:uppercase;color:#f1ece5;white-space:nowrap;">Larissa G.</h1>
+<p data-intro="" data-intro-delay="420" style="margin:22px 0 0;max-width:40ch;font:400 17px/1.6 'Schibsted Grotesk',sans-serif;color:#cfc8bf;text-wrap:pretty;">Unhas em gel, nail art, pés, sobrancelhas e cílios. Atendimento individual, com hora marcada.</p>
+<div data-intro="" data-intro-delay="560" style="display:flex;flex-wrap:wrap;align-items:center;gap:14px 26px;margin-top:26px;">
+<a href="{{ bookHref }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;padding:17px 24px;background:#f1ece5;color:#030303;font:600 11px/1 'Schibsted Grotesk',sans-serif;letter-spacing:.22em;text-transform:uppercase;transition:background .4s;" style-hover="background:#d9b6a3;color:#030303;">Agendar horário</a>
+<a href="#cardapio" style="font:500 11px/1 'Schibsted Grotesk',sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#f1ece5;padding-bottom:6px;border-bottom:1px solid rgba(241,236,229,.35);">Ver cardápio e valores</a>
+</div>
+<div data-intro="" data-intro-delay="680" style="display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:22px;font:500 10px/1.4 'Schibsted Grotesk',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#a9a299;"><span>Hora marcada</span><span>Atendimento individual</span><span>{{ cidade }}</span></div>
+</div>
+
+<div data-cap="1" style="position:absolute;left:max(20px,5vw);bottom:clamp(88px,12vh,140px);width:min(460px,calc(100vw - 76px));opacity:0;visibility:hidden;">
+<div style="display:flex;align-items:center;gap:14px;font:500 11px/1 'Schibsted Grotesk',sans-serif;letter-spacing:.3em;text-transform:uppercase;color:#d9b6a3;"><span style="width:28px;height:1px;background:#d9b6a3;"></span>Olhar</div>
+<h2 style="margin:20px 0 0;font:400 clamp(32px,3.8vw,56px)/1.04 'Tenor Sans',sans-serif;color:#f1ece5;text-wrap:balance;">Antes da lixa, o olhar.</h2>
+<p style="margin:20px 0 0;max-width:40ch;font:400 16px/1.65 'Schibsted Grotesk',sans-serif;color:#cfc8bf;text-wrap:pretty;">Cada atendimento começa pela observação: o formato da unha, o tamanho dos dedos, a sua rotina. É isso que define comprimento, formato e técnica.</p>
+</div>
+<div data-cap="2" style="position:absolute;left:max(20px,5vw);bottom:clamp(88px,12vh,140px);width:min(460px,calc(100vw - 76px));opacity:0;visibility:hidden;">
+<div style="display:flex;align-items:center;gap:14px;font:500 11px/1 'Schibsted Grotesk',sans-serif;letter-spacing:.3em;text-transform:uppercase;color:#d9b6a3;"><span style="width:28px;height:1px;background:#d9b6a3;"></span>Cuidado</div>
+<h2 style="margin:20px 0 0;font:400 clamp(32px,3.8vw,56px)/1.04 'Tenor Sans',sans-serif;color:#f1ece5;text-wrap:balance;">Luva nova, instrumento esterilizado.</h2>
+<p style="margin:20px 0 0;max-width:40ch;font:400 16px/1.65 'Schibsted Grotesk',sans-serif;color:#cfc8bf;text-wrap:pretty;">Instrumental de aço esterilizado, lixas de uso único e luvas trocadas a cada cliente. A biossegurança vem antes de qualquer cor.</p>
+</div>
+<div data-cap="3" style="position:absolute;left:max(20px,5vw);bottom:clamp(88px,12vh,140px);width:min(460px,calc(100vw - 76px));opacity:0;visibility:hidden;">
+<div style="display:flex;align-items:center;gap:14px;font:500 11px/1 'Schibsted Grotesk',sans-serif;letter-spacing:.3em;text-transform:uppercase;color:#d9b6a3;"><span style="width:28px;height:1px;background:#d9b6a3;"></span>Gel</div>
+<h2 style="margin:20px 0 0;font:400 clamp(32px,3.8vw,56px)/1.04 'Tenor Sans',sans-serif;color:#f1ece5;text-wrap:balance;">O gel é a estrutura.</h2>
+<p style="margin:20px 0 0;max-width:40ch;font:400 16px/1.65 'Schibsted Grotesk',sans-serif;color:#cfc8bf;text-wrap:pretty;">Aplicado em camadas finas e curado em cabine, o gel define a curvatura, dá resistência e mantém o brilho até a próxima manutenção.</p>
+</div>
+<div data-cap="4" style="position:absolute;left:max(20px,5vw);bottom:clamp(88px,12vh,140px);width:min(460px,calc(100vw - 76px));opacity:0;visibility:hidden;">
+<div style="display:flex;align-items:center;gap:14px;font:500 11px/1 'Schibsted Grotesk',sans-serif;letter-spacing:.3em;text-transform:uppercase;color:#d9b6a3;"><span style="width:28px;height:1px;background:#d9b6a3;"></span>Larissa G.</div>
+<h2 style="margin:20px 0 0;font:400 clamp(32px,3.8vw,56px)/1.04 'Tenor Sans',sans-serif;color:#f1ece5;text-wrap:balance;">Uma cliente por vez.</h2>
+<p style="margin:20px 0 0;max-width:40ch;font:400 16px/1.65 'Schibsted Grotesk',sans-serif;color:#cfc8bf;text-wrap:pretty;">Nail designer, Larissa atende com hora marcada e dedica o horário inteiro a quem está na cadeira: unhas das mãos e dos pés, sobrancelhas e cílios.</p>
+<div style="display:flex;flex-wrap:wrap;align-items:center;gap:14px 26px;margin-top:24px;">
+<a href="{{ bookHref }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;padding:16px 22px;background:#f1ece5;color:#030303;font:600 11px/1 'Schibsted Grotesk',sans-serif;letter-spacing:.22em;text-transform:uppercase;" style-hover="background:#d9b6a3;color:#030303;">Agendar horário</a>
+<a href="#cardapio" style="font:500 11px/1 'Schibsted Grotesk',sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#f1ece5;padding-bottom:6px;border-bottom:1px solid rgba(241,236,229,.35);">Ver cardápio</a>
+</div>
+</div>
+
+<div data-intro="" data-intro-delay="900" aria-hidden="true" style="position:absolute;right:max(16px,2.4vw);bottom:clamp(100px,15vh,170px);display:flex;flex-direction:column;align-items:center;gap:14px;">
+<span style="writing-mode:vertical-rl;font:500 10px/1 'Schibsted Grotesk',sans-serif;letter-spacing:.3em;text-transform:uppercase;color:#a9a299;">Role devagar</span>
+<span style="position:relative;width:1px;height:56px;background:rgba(241,236,229,.18);overflow:hidden;"><span data-cue="" style="position:absolute;left:0;top:0;width:1px;height:100%;background:#f1ece5;"></span></span>
+</div>
+
+<div data-intro="" data-intro-delay="800" style="position:absolute;left:max(20px,4vw);right:max(20px,4vw);bottom:18px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;">
+<button data-idx="0" onClick="{{ goShot }}" style="display:flex;flex-direction:column;gap:10px;padding:12px 0 6px;background:none;border:0;cursor:pointer;text-align:left;color:#f1ece5;"><span data-seg-label="" style="font:500 10px/1 'Schibsted Grotesk',sans-serif;letter-spacing:.2em;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%;">Início</span><span style="position:relative;display:block;width:100%;height:1px;background:rgba(241,236,229,.2);overflow:hidden;"><span data-seg-fill="" style="position:absolute;inset:0;background:#f1ece5;transform-origin:0 50%;"></span></span></button>
+<button data-idx="1" onClick="{{ goShot }}" style="display:flex;flex-direction:column;gap:10px;padding:12px 0 6px;background:none;border:0;cursor:pointer;text-align:left;color:#f1ece5;"><span data-seg-label="" style="font:500 10px/1 'Schibsted Grotesk',sans-serif;letter-spacing:.2em;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%;opacity:.45;">Olhar</span><span style="position:relative;display:block;width:100%;height:1px;background:rgba(241,236,229,.2);overflow:hidden;"><span data-seg-fill="" style="position:absolute;inset:0;background:#f1ece5;transform-origin:0 50%;transform:scaleX(0);"></span></span></button>
+<button data-idx="2" onClick="{{ goShot }}" style="display:flex;flex-direction:column;gap:10px;padding:12px 0 6px;background:none;border:0;cursor:pointer;text-align:left;color:#f1ece5;"><span data-seg-label="" style="font:500 10px/1 'Schibsted Grotesk',sans-serif;letter-spacing:.2em;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%;opacity:.45;">Cuidado</span><span style="position:relative;display:block;width:100%;height:1px;background:rgba(241,236,229,.2);overflow:hidden;"><span data-seg-fill="" style="position:absolute;inset:0;background:#f1ece5;transform-origin:0 50%;transform:scaleX(0);"></span></span></button>
+<button data-idx="3" onClick="{{ goShot }}" style="display:flex;flex-direction:column;gap:10px;padding:12px 0 6px;background:none;border:0;cursor:pointer;text-align:left;color:#f1ece5;"><span data-seg-label="" style="font:500 10px/1 'Schibsted Grotesk',sans-serif;letter-spacing:.2em;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%;opacity:.45;">Gel</span><span style="position:relative;display:block;width:100%;height:1px;background:rgba(241,236,229,.2);overflow:hidden;"><span data-seg-fill="" style="position:absolute;inset:0;background:#f1ece5;transform-origin:0 50%;transform:scaleX(0);"></span></span></button>
+<button data-idx="4" onClick="{{ goShot }}" style="display:flex;flex-direction:column;gap:10px;padding:12px 0 6px;background:none;border:0;cursor:pointer;text-align:left;color:#f1ece5;"><span data-seg-label="" style="font:500 10px/1 'Schibsted Grotesk',sans-serif;letter-spacing:.2em;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%;opacity:.45;">Larissa</span><span style="position:relative;display:block;width:100%;height:1px;background:rgba(241,236,229,.2);overflow:hidden;"><span data-seg-fill="" style="position:absolute;inset:0;background:#f1ece5;transform-origin:0 50%;transform:scaleX(0);"></span></span></button>
+</div>
+</div>
+</section>
+
+<section id="trabalhos" data-strip="" data-screen-label="Trabalhos" style="position:relative;height:420vh;">
+<div style="position:sticky;top:0;height:100svh;overflow:hidden;">
+<div data-track="" style="position:relative;display:flex;align-items:center;gap:clamp(28px,5vw,96px);height:100%;width:max-content;padding:0 max(20px,7vw);box-sizing:border-box;will-change:transform;">
+<div style="flex:0 0 auto;width:min(380px,74vw);">
+<div style="display:flex;align-items:center;gap:14px;font:500 11px/1 'Schibsted Grotesk',sans-serif;letter-spacing:.3em;text-transform:uppercase;color:#d9b6a3;"><span style="width:28px;height:1px;background:#d9b6a3;"></span>Portfólio</div>
+<h2 style="margin:22px 0 0;font:400 clamp(40px,5.2vw,84px)/.98 'Tenor Sans',sans-serif;color:#f1ece5;">Trabalhos recentes</h2>
+<p style="margin:24px 0 0;max-width:30ch;font:400 16px/1.6 'Schibsted Grotesk',sans-serif;color:#bdb6ad;">Toque em uma foto para ampliar e pedir um parecido.</p>
+</div>
+<button data-frame="" data-idx="0" onClick="{{ openLb }}" style="flex:0 0 auto;display:flex;flex-direction:column;gap:18px;padding:0;background:none;border:0;cursor:zoom-in;text-align:left;color:#f1ece5;"><span style="position:relative;display:block;height:min(64svh,112vw);aspect-ratio:900/1600;overflow:hidden;background:#111;"><img src="assets/trabalho-a.jpg" alt="Francesinha colorida com desenhos à mão livre em unhas amendoadas" loading="lazy" style="position:absolute;top:0;left:-7%;width:114%;height:100%;object-fit:cover;display:block;"></span><span style="display:block;width:0;min-width:100%;"><span style="display:block;font:400 19px/1.25 'Tenor Sans',sans-serif;">Francesinha temática</span><span style="display:block;margin-top:8px;font:400 14px/1.55 'Schibsted Grotesk',sans-serif;color:#a9a299;">Nail art à mão livre inspirada em Toy Story, sobre base nude, formato amendoado.</span></span></button>
+<button data-frame="" data-idx="1" onClick="{{ openLb }}" style="flex:0 0 auto;display:flex;flex-direction:column;gap:18px;padding:0;background:none;border:0;cursor:zoom-in;text-align:left;color:#f1ece5;"><span style="position:relative;display:block;height:min(64svh,112vw);aspect-ratio:1200/1600;overflow:hidden;background:#111;"><img src="assets/trabalho-d.jpg" alt="Francesinha leitosa em unhas quadradas curtas" loading="lazy" style="position:absolute;top:0;left:-7%;width:114%;height:100%;object-fit:cover;display:block;"></span><span style="display:block;width:0;min-width:100%;"><span style="display:block;font:400 19px/1.25 'Tenor Sans',sans-serif;">Francesinha leitosa</span><span style="display:block;margin-top:8px;font:400 14px/1.55 'Schibsted Grotesk',sans-serif;color:#a9a299;">Formato quadrado curto, base leitosa e linha branca fina.</span></span></button>
+<button data-frame="" data-idx="2" onClick="{{ openLb }}" style="flex:0 0 auto;display:flex;flex-direction:column;gap:18px;padding:0;background:none;border:0;cursor:zoom-in;text-align:left;color:#f1ece5;"><span style="position:relative;display:block;height:min(64svh,112vw);aspect-ratio:900/1600;overflow:hidden;background:#111;"><img src="assets/trabalho-c.jpg" alt="Pés com francesinha leitosa em unhas curtas" loading="lazy" style="position:absolute;top:0;left:-7%;width:114%;height:100%;object-fit:cover;display:block;"></span><span style="display:block;width:0;min-width:100%;"><span style="display:block;font:400 19px/1.25 'Tenor Sans',sans-serif;">Pés</span><span style="display:block;margin-top:8px;font:400 14px/1.55 'Schibsted Grotesk',sans-serif;color:#a9a299;">Francesinha leitosa em unhas curtas, acabamento em gel.</span></span></button>
+<button data-frame="" data-idx="3" onClick="{{ openLb }}" style="flex:0 0 auto;display:flex;flex-direction:column;gap:18px;padding:0;background:none;border:0;cursor:zoom-in;text-align:left;color:#f1ece5;"><span style="position:relative;display:block;height:min(64svh,112vw);aspect-ratio:1238/1600;overflow:hidden;background:#111;"><img src="assets/trabalho-b.jpg" alt="Sobrancelhas desenhadas e cílios definidos" loading="lazy" style="position:absolute;top:0;left:-7%;width:114%;height:100%;object-fit:cover;display:block;"></span><span style="display:block;width:0;min-width:100%;"><span style="display:block;font:400 19px/1.25 'Tenor Sans',sans-serif;">Sobrancelhas e cílios</span><span style="display:block;margin-top:8px;font:400 14px/1.55 'Schibsted Grotesk',sans-serif;color:#a9a299;">Design de sobrancelhas e cílios definidos, com acabamento natural.</span></span></button>
+<div style="flex:0 0 auto;width:min(340px,74vw);">
+<div style="display:flex;align-items:center;gap:14px;font:500 11px/1 'Schibsted Grotesk',sans-serif;letter-spacing:.3em;text-transform:uppercase;color:#d9b6a3;"><span style="width:28px;height:1px;background:#d9b6a3;"></span>Instagram</div>
+<h3 style="margin:22px 0 0;font:400 clamp(30px,3.4vw,48px)/1.05 'Tenor Sans',sans-serif;color:#f1ece5;">Mais trabalhos no perfil</h3>
+<a href="https://www.instagram.com/larissag.naildesigner/" target="_blank" rel="noopener" style="display:inline-block;margin-top:26px;font:500 15px/1 'Schibsted Grotesk',sans-serif;color:#f1ece5;padding-bottom:6px;border-bottom:1px solid rgba(241,236,229,.35);">@larissag.naildesigner ↗</a>
+</div>
+</div>
+</div>
+</section>
+
+<section id="feedbacks" data-screen-label="Feedbacks" style="max-width:1320px;margin:0 auto;padding:clamp(88px,14vh,160px) max(20px,5vw) clamp(72px,10vh,120px);box-sizing:border-box;">
+<div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px 48px;margin-bottom:clamp(32px,5vh,56px);">
+<div data-reveal="0">
+<div style="display:flex;align-items:center;gap:14px;font:500 11px/1 'Schibsted Grotesk',sans-serif;letter-spacing:.3em;text-transform:uppercase;color:#d9b6a3;"><span style="width:28px;height:1px;background:#d9b6a3;"></span>Feedbacks</div>
+<h2 style="margin:22px 0 0;font:400 clamp(40px,5.6vw,88px)/.98 'Tenor Sans',sans-serif;color:#f1ece5;">Quem já sentou<br>na cadeira.</h2>
+</div>
+<a data-reveal="120" href="https://www.instagram.com/larissag.naildesigner/" target="_blank" rel="noopener" style="font:500 11px/1 'Schibsted Grotesk',sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#f1ece5;padding-bottom:6px;border-bottom:1px solid rgba(241,236,229,.35);">Todos os feedbacks nos destaques ↗</a>
+</div>
+<div data-reveal="200" style="display:flex;gap:clamp(14px,2vw,28px);overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px;">
+<div style="flex:0 0 auto;position:relative;width:clamp(220px,26vw,320px);aspect-ratio:9/16;scroll-snap-align:start;background:#0d0d0c;"><image-slot id="fb-1" shape="rect" placeholder="Print de feedback de cliente"></image-slot></div>
+<div style="flex:0 0 auto;position:relative;width:clamp(220px,26vw,320px);aspect-ratio:9/16;scroll-snap-align:start;background:#0d0d0c;"><image-slot id="fb-2" shape="rect" placeholder="Print de feedback de cliente"></image-slot></div>
+<div style="flex:0 0 auto;position:relative;width:clamp(220px,26vw,320px);aspect-ratio:9/16;scroll-snap-align:start;background:#0d0d0c;"><image-slot id="fb-3" shape="rect" placeholder="Print de feedback de cliente"></image-slot></div>
+</div>
+</section>
+
+<section id="cardapio" data-cardapio="" data-screen-label="Cardápio" style="background:#ece6dd;color:#121110;">
+<div style="max-width:1320px;margin:0 auto;padding:clamp(88px,14vh,160px) max(20px,5vw) clamp(80px,12vh,140px);box-sizing:border-box;display:flex;flex-wrap:wrap;align-items:flex-start;gap:clamp(40px,5vw,88px);">
+<div style="flex:1 1 560px;min-width:0;">
+<div style="display:flex;align-items:center;gap:14px;font:500 11px/1 'Schibsted Grotesk',sans-serif;letter-spacing:.3em;text-transform:uppercase;color:#7a5a4a;"><span style="width:28px;height:1px;background:#7a5a4a;"></span>Cardápio</div>
+<h2 style="margin:22px 0 0;font:400 clamp(44px,6vw,96px)/.96 'Tenor Sans',sans-serif;color:#121110;">Monte seu<br>atendimento.</h2>
+<p style="margin:24px 0 0;max-width:44ch;font:400 17px/1.6 'Schibsted Grotesk',sans-serif;color:#4f4942;text-wrap:pretty;">Marque os serviços, escolha o formato e envie o pedido pronto. A Larissa responde com os horários livres.</p>
+<sc-for list="{{ cats }}" as="c" hint-placeholder-count="4">
+<div style="margin-top:clamp(40px,6vh,64px);">
+<div style="display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding-bottom:14px;font:500 11px/1 'Schibsted Grotesk',sans-serif;letter-spacing:.3em;text-transform:uppercase;color:#121110;"><span>{{ c.cat }}</span><span style="color:#6b645c;">{{ c.note }}</span></div>
+<sc-for list="{{ c.items }}" as="it" hint-placeholder-count="3">
+<div style="border-top:1px solid rgba(18,17,16,.16);background:{{ it.rowBg }};transition:background .4s;">
+<button data-id="{{ it.id }}" onClick="{{ toggle }}" aria-pressed="{{ it.pressed }}" style="display:grid;grid-template-columns:22px minmax(0,1fr);gap:6px 16px;width:100%;box-sizing:border-box;padding:20px 6px 18px 4px;background:none;border:0;cursor:pointer;text-align:left;color:#121110;">
+<span style="grid-row:1 / span 2;width:20px;height:20px;margin-top:4px;border-radius:50%;border:1px solid #121110;background:{{ it.circle }};display:grid;place-items:center;transition:background .3s;"><span style="width:5px;height:9px;border:solid #ece6dd;border-width:0 1.5px 1.5px 0;transform:translateY(-1px) rotate(45deg);opacity:{{ it.check }};"></span></span>
+<span style="display:flex;align-items:baseline;gap:12px;min-width:0;">
+<span style="font:400 clamp(20px,2vw,26px)/1.2 'Tenor Sans',sans-serif;">{{ it.n }}</span>
+<span style="flex:1 1 24px;min-width:14px;border-bottom:1px dotted rgba(18,17,16,.45);transform:translateY(-5px);"></span>
+<span style="font:500 10px/1 'Schibsted Grotesk',sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#6b645c;white-space:nowrap;">{{ it.t }}</span>
+<sc-if value="{{ showPrices }}" hint-placeholder-val="{{ true }}"><span style="font:600 15px/1 'Schibsted Grotesk',sans-serif;font-variant-numeric:tabular-nums;white-space:nowrap;">{{ it.pt }}</span></sc-if>
+</span>
+<span style="font:400 14.5px/1.55 'Schibsted Grotesk',sans-serif;color:#5f5850;max-width:54ch;">{{ it.d }}</span>
+</button>
+<sc-if value="{{ it.hasW }}" hint-placeholder-val="{{ false }}"><button data-idx="{{ it.w }}" onClick="{{ openLb }}" style="margin:-8px 0 16px 42px;padding:4px 0;background:none;border:0;border-bottom:1px solid rgba(18,17,16,.35);cursor:zoom-in;color:#121110;font:500 10px/1 'Schibsted Grotesk',sans-serif;letter-spacing:.2em;text-transform:uppercase;">Ver trabalho</button></sc-if>
+</div>
+</sc-for>
+</div>
+</sc-for>
+</div>
+
+<aside id="comanda" data-comanda="" style="flex:1 1 340px;max-width:460px;position:sticky;top:88px;background:#0b0b0a;color:#f1ece5;padding:28px clamp(20px,2.4vw,32px) 26px;box-sizing:border-box;">
+<div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;">
+<span style="font:400 26px/1 'Tenor Sans',sans-serif;">Seu pedido</span>
+<span style="font:500 10px/1 'Schibsted Grotesk',sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#a9a299;">{{ countText }}</span>
+</div>
+<div style="margin-top:20px;display:flex;flex-direction:column;gap:12px;min-height:44px;">
+<sc-if value="{{ empty }}" hint-placeholder-val="{{ true }}"><p style="margin:0;font:400 14.5px/1.55 'Schibsted Grotesk',sans-serif;color:#a9a299;">Nenhum serviço marcado ainda. Toque nos itens do cardápio.</p></sc-if>
+<sc-for list="{{ order }}" as="o" hint-placeholder-count="0">
+<div style="display:flex;align-items:baseline;gap:12px;font:400 15px/1.35 'Schibsted Grotesk',sans-serif;">
+<span style="flex:1 1 auto;">{{ o.n }}</span>
+<sc-if value="{{ showPrices }}" hint-placeholder-val="{{ true }}"><span style="font-variant-numeric:tabular-nums;color:#cfc8bf;white-space:nowrap;">{{ o.pt }}</span></sc-if>
+<button data-id="{{ o.id }}" onClick="{{ toggle }}" aria-label="Remover" style="width:24px;height:24px;flex:0 0 auto;background:none;border:0;cursor:pointer;color:#8a847c;font:400 18px/1 'Schibsted Grotesk',sans-serif;">×</button>
+</div>
+</sc-for>
+<sc-if value="{{ hasRef }}" hint-placeholder-val="{{ false }}"><div style="font:400 13px/1.5 'Schibsted Grotesk',sans-serif;color:#d9b6a3;">Referência: {{ ref }}</div></sc-if>
+</div>
+<div aria-hidden="true" style="position:relative;height:28px;margin:18px calc(-1 * clamp(20px,2.4vw,32px));"><span style="position:absolute;left:-10px;top:4px;width:20px;height:20px;border-radius:50%;background:#ece6dd;"></span><span style="position:absolute;right:-10px;top:4px;width:20px;height:20px;border-radius:50%;background:#ece6dd;"></span><span style="position:absolute;left:22px;right:22px;top:14px;border-top:1px dashed rgba(241,236,229,.25);"></span></div>
+<div style="font:500 10px/1 'Schibsted Grotesk',sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#a9a299;">Formato</div>
+<div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;">
+<button data-v="Amendoado" onClick="{{ pickShape }}" style="display:inline-flex;align-items:center;gap:9px;padding:10px 13px;border:1px solid rgba(241,236,229,.3);background:{{ sh0bg }};color:{{ sh0fg }};cursor:pointer;font:500 12px/1 'Schibsted Grotesk',sans-serif;"><span style="width:10px;height:15px;background:currentColor;clip-path:polygon(50% 0,80% 18%,96% 45%,100% 70%,90% 90%,70% 100%,30% 100%,10% 90%,0 70%,4% 45%,20% 18%);"></span>Amendoado</button>
+<button data-v="Quadrado" onClick="{{ pickShape }}" style="display:inline-flex;align-items:center;gap:9px;padding:10px 13px;border:1px solid rgba(241,236,229,.3);background:{{ sh1bg }};color:{{ sh1fg }};cursor:pointer;font:500 12px/1 'Schibsted Grotesk',sans-serif;"><span style="width:10px;height:14px;background:currentColor;border-radius:1px 1px 5px 5px;"></span>Quadrado</button>
+<button data-v="Bailarina" onClick="{{ pickShape }}" style="display:inline-flex;align-items:center;gap:9px;padding:10px 13px;border:1px solid rgba(241,236,229,.3);background:{{ sh2bg }};color:{{ sh2fg }};cursor:pointer;font:500 12px/1 'Schibsted Grotesk',sans-serif;"><span style="width:10px;height:15px;background:currentColor;clip-path:polygon(28% 0,72% 0,100% 62%,100% 100%,0 100%,0 62%);border-radius:0 0 4px 4px;"></span>Bailarina</button>
+<button data-v="Redondo" onClick="{{ pickShape }}" style="display:inline-flex;align-items:center;gap:9px;padding:10px 13px;border:1px solid rgba(241,236,229,.3);background:{{ sh3bg }};color:{{ sh3fg }};cursor:pointer;font:500 12px/1 'Schibsted Grotesk',sans-serif;"><span style="width:10px;height:14px;background:currentColor;border-radius:50% 50% 40% 40% / 60% 60% 40% 40%;"></span>Redondo</button>
+</div>
+<div style="margin-top:22px;font:500 10px/1 'Schibsted Grotesk',sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#a9a299;">Melhor período</div>
+<div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;">
+<button data-v="Manhã" onClick="{{ pickPer }}" style="padding:10px 14px;border:1px solid rgba(241,236,229,.3);background:{{ pe0bg }};color:{{ pe0fg }};cursor:pointer;font:500 12px/1 'Schibsted Grotesk',sans-serif;">Manhã</button>
+<button data-v="Tarde" onClick="{{ pickPer }}" style="padding:10px 14px;border:1px solid rgba(241,236,229,.3);background:{{ pe1bg }};color:{{ pe1fg }};cursor:pointer;font:500 12px/1 'Schibsted Grotesk',sans-serif;">Tarde</button>
+<button data-v="Noite" onClick="{{ pickPer }}" style="padding:10px 14px;border:1px solid rgba(241,236,229,.3);background:{{ pe2bg }};color:{{ pe2fg }};cursor:pointer;font:500 12px/1 'Schibsted Grotesk',sans-serif;">Noite</button>
+<button data-v="Sábado" onClick="{{ pickPer }}" style="padding:10px 14px;border:1px solid rgba(241,236,229,.3);background:{{ pe3bg }};color:{{ pe3fg }};cursor:pointer;font:500 12px/1 'Schibsted Grotesk',sans-serif;">Sábado</button>
+</div>
+<input value="{{ nome }}" onInput="{{ setNome }}" placeholder="Seu nome (opcional)" aria-label="Seu nome" style="display:block;width:100%;box-sizing:border-box;margin-top:22px;padding:14px 0;background:none;border:0;border-bottom:1px solid rgba(241,236,229,.3);outline:none;color:#f1ece5;font:400 15px/1 'Schibsted Grotesk',sans-serif;">
+<sc-if value="{{ showPrices }}" hint-placeholder-val="{{ true }}">
+<div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-top:24px;"><span style="font:500 10px/1 'Schibsted Grotesk',sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#a9a299;">Estimativa</span><span style="font:400 24px/1 'Tenor Sans',sans-serif;font-variant-numeric:tabular-nums;">{{ totalText }}</span></div>
+</sc-if>
+<a href="{{ orderHref }}" target="_blank" rel="noopener" onClick="{{ sendOrder }}" style="display:flex;justify-content:center;align-items:center;margin-top:20px;padding:19px 20px;background:#f1ece5;color:#030303;font:600 11px/1 'Schibsted Grotesk',sans-serif;letter-spacing:.22em;text-transform:uppercase;transition:background .4s;" style-hover="background:#d9b6a3;color:#030303;">{{ ctaLabel }}</a>
+<p style="margin:14px 0 0;font:400 12.5px/1.55 'Schibsted Grotesk',sans-serif;color:#a9a299;">{{ channelNote }} O horário é confirmado com sinal via PIX, descontado do valor no dia.</p>
+</aside>
+</div>
+</section>
+
+<section id="duvidas" data-screen-label="Dúvidas" style="max-width:1320px;margin:0 auto;padding:clamp(88px,14vh,160px) max(20px,5vw) clamp(40px,6vh,80px);box-sizing:border-box;">
+<div data-reveal="0" style="display:flex;align-items:center;gap:14px;font:500 11px/1 'Schibsted Grotesk',sans-serif;letter-spacing:.3em;text-transform:uppercase;color:#d9b6a3;"><span style="width:28px;height:1px;background:#d9b6a3;"></span>Dúvidas</div>
+<h2 data-reveal="80" style="margin:22px 0 0;max-width:14ch;font:400 clamp(40px,5.6vw,88px)/.98 'Tenor Sans',sans-serif;color:#f1ece5;">O que mais perguntam no direct.</h2>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:0 clamp(32px,5vw,80px);margin-top:clamp(40px,6vh,72px);">
+<div data-reveal="0" style="padding:28px 0;border-top:1px solid rgba(241,236,229,.14);"><h3 style="margin:0;font:400 22px/1.3 'Tenor Sans',sans-serif;color:#f1ece5;">Dói? Estraga a unha natural?</h3><p style="margin:12px 0 0;font:400 15.5px/1.65 'Schibsted Grotesk',sans-serif;color:#bdb6ad;max-width:52ch;">Não dói. Com a preparação correta e a remoção feita pela profissional, a unha natural continua saudável e cresce sem quebras.</p></div>
+<div data-reveal="80" style="padding:28px 0;border-top:1px solid rgba(241,236,229,.14);"><h3 style="margin:0;font:400 22px/1.3 'Tenor Sans',sans-serif;color:#f1ece5;">De quanto em quanto tempo é a manutenção?</h3><p style="margin:12px 0 0;font:400 15.5px/1.65 'Schibsted Grotesk',sans-serif;color:#bdb6ad;max-width:52ch;">Em geral, a cada três ou quatro semanas. O prazo muda conforme o crescimento da sua unha e a sua rotina.</p></div>
+<div data-reveal="0" style="padding:28px 0;border-top:1px solid rgba(241,236,229,.14);"><h3 style="margin:0;font:400 22px/1.3 'Tenor Sans',sans-serif;color:#f1ece5;">Quanto tempo leva o atendimento?</h3><p style="margin:12px 0 0;font:400 15.5px/1.65 'Schibsted Grotesk',sans-serif;color:#bdb6ad;max-width:52ch;">Depende do serviço. A duração de cada um está no cardápio, e o horário é reservado só para você.</p></div>
+<div data-reveal="80" style="padding:28px 0;border-top:1px solid rgba(241,236,229,.14);"><h3 style="margin:0;font:400 22px/1.3 'Tenor Sans',sans-serif;color:#f1ece5;">Posso tirar o gel em casa?</h3><p style="margin:12px 0 0;font:400 15.5px/1.65 'Schibsted Grotesk',sans-serif;color:#bdb6ad;max-width:52ch;">Não é recomendado. A remoção feita do jeito errado afina e enfraquece a unha natural. Ela é feita no estúdio.</p></div>
+<div data-reveal="0" style="padding:28px 0;border-top:1px solid rgba(241,236,229,.14);"><h3 style="margin:0;font:400 22px/1.3 'Tenor Sans',sans-serif;color:#f1ece5;">Como confirmo meu horário?</h3><p style="margin:12px 0 0;font:400 15.5px/1.65 'Schibsted Grotesk',sans-serif;color:#bdb6ad;max-width:52ch;">Envie o pedido pelo cardápio. A Larissa responde com os horários livres, e a reserva é confirmada com um sinal via PIX.</p></div>
+<div data-reveal="80" style="padding:28px 0;border-top:1px solid rgba(241,236,229,.14);"><h3 style="margin:0;font:400 22px/1.3 'Tenor Sans',sans-serif;color:#f1ece5;">Onde fica o estúdio?</h3><p style="margin:12px 0 0;font:400 15.5px/1.65 'Schibsted Grotesk',sans-serif;color:#bdb6ad;max-width:52ch;">Em {{ cidade }}. O endereço completo é enviado junto com a confirmação do horário.</p></div>
+</div>
+</section>
+
+<section id="agendar" data-agendar="" data-screen-label="Agendar" style="max-width:1320px;margin:0 auto;padding:clamp(88px,14vh,160px) max(20px,5vw) clamp(80px,12vh,140px);box-sizing:border-box;">
+<h2 data-reveal="0" style="margin:0;font:400 clamp(50px,9.4vw,152px)/.92 'Tenor Sans',sans-serif;color:#f1ece5;">Reserve seu<br>horário.</h2>
+<div data-reveal="120" style="display:flex;flex-wrap:wrap;gap:12px;margin-top:clamp(32px,5vh,56px);">
+<a href="{{ bookHref }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;padding:19px 26px;background:#f1ece5;color:#030303;font:600 11px/1 'Schibsted Grotesk',sans-serif;letter-spacing:.22em;text-transform:uppercase;" style-hover="background:#d9b6a3;color:#030303;">Agendar horário</a>
+<a href="#cardapio" style="display:inline-flex;align-items:center;padding:18px 25px;border:1px solid rgba(241,236,229,.4);color:#f1ece5;font:600 11px/1 'Schibsted Grotesk',sans-serif;letter-spacing:.22em;text-transform:uppercase;" style-hover="border-color:#d9b6a3;color:#d9b6a3;">Montar pedido</a>
+</div>
+<div id="estudio" data-reveal="200" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:28px 48px;margin-top:clamp(56px,9vh,104px);padding-top:28px;border-top:1px solid rgba(241,236,229,.14);">
+<div><div style="font:500 10px/1 'Schibsted Grotesk',sans-serif;letter-spacing:.24em;text-transform:uppercase;color:#d9b6a3;">Onde</div><p style="margin:14px 0 0;font:400 16px/1.6 'Schibsted Grotesk',sans-serif;color:#cfc8bf;">{{ cidade }}<br>Endereço completo na confirmação.</p></div>
+<div><div style="font:500 10px/1 'Schibsted Grotesk',sans-serif;letter-spacing:.24em;text-transform:uppercase;color:#d9b6a3;">Quando</div><p style="margin:14px 0 0;font:400 16px/1.6 'Schibsted Grotesk',sans-serif;color:#cfc8bf;">{{ horarios }}</p></div>
+<div><div style="font:500 10px/1 'Schibsted Grotesk',sans-serif;letter-spacing:.24em;text-transform:uppercase;color:#d9b6a3;">Contato</div><p style="margin:14px 0 0;display:flex;flex-direction:column;gap:8px;font:400 16px/1.4 'Schibsted Grotesk',sans-serif;"><a href="{{ bookHref }}" target="_blank" rel="noopener" style="color:#f1ece5;">{{ channelName }}</a><a href="https://www.instagram.com/larissag.naildesigner/" target="_blank" rel="noopener" style="color:#f1ece5;">@larissag.naildesigner</a></p></div>
+</div>
+</section>
+
+<footer data-screen-label="Créditos" style="display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center;padding:clamp(64px,10vh,120px) 20px clamp(96px,12vh,120px);border-top:1px solid rgba(241,236,229,.1);">
+<div style="position:relative;width:clamp(96px,9vw,128px);aspect-ratio:4/5;overflow:hidden;background:#050505;clip-path:polygon(50.0% 0.0%,57.2% 2.7%,64.0% 6.0%,70.4% 9.8%,76.3% 14.1%,81.6% 18.8%,86.4% 23.9%,90.4% 29.4%,93.8% 35.2%,96.5% 41.2%,98.4% 47.3%,99.6% 53.6%,100.0% 60.0%,99.2% 66.9%,97.0% 73.7%,93.3% 80.0%,88.3% 85.7%,82.1% 90.6%,75.0% 94.6%,67.1% 97.6%,58.7% 99.4%,50.0% 100.0%,41.3% 99.4%,32.9% 97.6%,25.0% 94.6%,17.9% 90.6%,11.7% 85.7%,6.7% 80.0%,3.0% 73.7%,0.8% 66.9%,0.0% 60.0%,0.4% 53.6%,1.6% 47.3%,3.5% 41.2%,6.2% 35.2%,9.6% 29.4%,13.6% 23.9%,18.4% 18.8%,23.7% 14.1%,29.6% 9.8%,36.0% 6.0%,42.8% 2.7%);"><img src="assets/larissa-retrato.jpg" alt="Larissa G." loading="lazy" style="position:absolute;width:240%;height:auto;left:-97.8%;top:-21.3%;max-width:none;display:block;"></div>
+<div style="margin-top:10px;font:400 15px/1 'Tenor Sans',sans-serif;letter-spacing:.42em;text-transform:uppercase;color:#f1ece5;">Larissa G.</div>
+<div style="font:500 11px/1 'Schibsted Grotesk',sans-serif;letter-spacing:.3em;text-transform:uppercase;color:#a9a299;">Nail designer · {{ cidade }}</div>
+<div style="font:400 14px/1.8 'Schibsted Grotesk',sans-serif;color:#a9a299;">Unhas em gel · Nail art · Pés · Sobrancelhas · Cílios</div>
+<div style="margin-top:14px;font:400 12px/1 'Schibsted Grotesk',sans-serif;color:#8a847c;">© 2026</div>
+</footer>
+
+<sc-if value="{{ narrow }}" hint-placeholder-val="{{ false }}">
+<div data-bar="" style="position:fixed;left:12px;right:12px;bottom:12px;z-index:60;display:flex;gap:8px;transform:translateY(140%);transition:transform .5s cubic-bezier(.2,.7,.1,1);">
+<a href="{{ barHref }}" target="_blank" rel="noopener" onClick="{{ barClick }}" style="flex:1 1 auto;display:flex;justify-content:center;align-items:center;min-height:54px;background:#f1ece5;color:#030303;font:600 11px/1 'Schibsted Grotesk',sans-serif;letter-spacing:.2em;text-transform:uppercase;box-shadow:0 10px 30px rgba(0,0,0,.45);">{{ barLabel }}</a>
+<a href="#cardapio" style="flex:0 0 auto;display:flex;align-items:center;justify-content:center;min-height:54px;padding:0 16px;background:#0b0b0a;border:1px solid rgba(241,236,229,.3);color:#f1ece5;font:600 11px/1 'Schibsted Grotesk',sans-serif;letter-spacing:.2em;text-transform:uppercase;">Valores</a>
+</div>
+</sc-if>
+
+<div data-grain="" aria-hidden="true" style="position:fixed;inset:-12%;z-index:90;pointer-events:none;opacity:{{ grain }};"></div>
+
+<sc-if value="{{ hasToast }}" hint-placeholder-val="{{ false }}"><div role="status" style="position:fixed;left:50%;bottom:84px;transform:translateX(-50%);z-index:120;padding:14px 18px;background:#f1ece5;color:#030303;font:500 13px/1.4 'Schibsted Grotesk',sans-serif;box-shadow:0 10px 30px rgba(0,0,0,.4);max-width:calc(100vw - 40px);">{{ toast }}</div></sc-if>
+
+<sc-if value="{{ lbOpen }}" hint-placeholder-val="{{ false }}">
+<div data-lb="" onClick="{{ closeLb }}" role="dialog" aria-modal="true" aria-label="Trabalho ampliado" style="position:fixed;inset:0;z-index:100;background:rgba(3,3,3,.97);display:flex;flex-direction:column;">
+<div style="display:flex;justify-content:space-between;align-items:center;padding:20px max(20px,4vw);font:500 11px/1 'Schibsted Grotesk',sans-serif;letter-spacing:.24em;text-transform:uppercase;color:#a9a299;"><span>{{ lbCount }}</span><button onClick="{{ closeLb }}" style="background:none;border:0;padding:8px 0;cursor:pointer;color:#f1ece5;font:500 11px/1 'Schibsted Grotesk',sans-serif;letter-spacing:.24em;text-transform:uppercase;">Fechar</button></div>
+<div style="flex:1 1 auto;min-height:0;display:flex;align-items:center;justify-content:center;padding:0 max(20px,4vw);"><img data-lb-img="" alt="{{ lbTitle }}" onClick="{{ stop }}" style="display:block;max-width:100%;max-height:calc(100svh - 230px);object-fit:contain;"></div>
+<div onClick="{{ stop }}" style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px 40px;padding:22px max(20px,4vw) 26px;">
+<div><div style="font:400 22px/1.2 'Tenor Sans',sans-serif;color:#f1ece5;">{{ lbTitle }}</div><div style="margin-top:8px;max-width:52ch;font:400 14px/1.6 'Schibsted Grotesk',sans-serif;color:#a9a299;">{{ lbDesc }}</div></div>
+<div style="display:flex;flex-wrap:wrap;gap:10px;">
+<button onClick="{{ prevLb }}" aria-label="Anterior" style="padding:14px 16px;background:none;border:1px solid rgba(241,236,229,.3);cursor:pointer;color:#f1ece5;font:500 11px/1 'Schibsted Grotesk',sans-serif;">←</button>
+<button onClick="{{ nextLb }}" aria-label="Próxima" style="padding:14px 16px;background:none;border:1px solid rgba(241,236,229,.3);cursor:pointer;color:#f1ece5;font:500 11px/1 'Schibsted Grotesk',sans-serif;">→</button>
+<button onClick="{{ wantWork }}" style="padding:14px 18px;background:#f1ece5;border:0;cursor:pointer;color:#030303;font:600 11px/1 'Schibsted Grotesk',sans-serif;letter-spacing:.22em;text-transform:uppercase;">Quero um assim</button>
+</div>
+</div>
+</div>
+</sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;whatsapp&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Contato&quot;},&quot;cidade&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Bairro · Cidade&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Contato&quot;},&quot;horarios&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Atendimento com hora marcada&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Contato&quot;},&quot;mostrarPrecos&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Cardápio&quot;},&quot;intro&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Cinema&quot;},&quot;rackFocus&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Cinema&quot;},&quot;grain&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:0.02,&quot;min&quot;:0,&quot;max&quot;:0.16,&quot;step&quot;:0.01,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Cinema&quot;}}">
+class Component extends DCLogic {
+  state = { vw: typeof window !== 'undefined' ? window.innerWidth : 1280, lb: -1, sel: {}, shape: '', per: {}, nome: '', ref: '', toast: '' };
+
+  works = [
+    { src: 'assets/trabalho-a.jpg', title: 'Francesinha temática', desc: 'Nail art à mão livre inspirada em Toy Story, sobre base nude, formato amendoado.', svc: 'art' },
+    { src: 'assets/trabalho-d.jpg', title: 'Francesinha leitosa', desc: 'Formato quadrado curto, base leitosa e linha branca fina.', svc: 'fra' },
+    { src: 'assets/trabalho-c.jpg', title: 'Pés', desc: 'Francesinha leitosa em unhas curtas, acabamento em gel.', svc: 'pes' },
+    { src: 'assets/trabalho-b.jpg', title: 'Sobrancelhas e cílios', desc: 'Design de sobrancelhas e cílios definidos, com acabamento natural.', svc: 'sob' }
+  ];
+
+  menu = [
+    { cat: 'Mãos', note: 'a partir de', items: [
+      { id: 'alg', n: 'Alongamento em gel', d: 'Comprimento e formato sob medida, construídos em gel.', t: '2h30', p: 220 },
+      { id: 'man', n: 'Manutenção do alongamento', d: 'Reposição do gel a cada três ou quatro semanas.', t: '1h45', p: 150 },
+      { id: 'ban', n: 'Banho de gel', d: 'Camada de gel sobre a unha natural, para crescer sem quebras.', t: '1h30', p: 130 },
+      { id: 'bli', n: 'Blindagem', d: 'Película fina que protege unhas frágeis e mantém o brilho.', t: '1h15', p: 110 },
+      { id: 'esm', n: 'Esmaltação em gel', d: 'Cutilagem e cor com brilho que dura semanas.', t: '1h', p: 80 }
+    ]},
+    { cat: 'Detalhes', note: 'adicionais', items: [
+      { id: 'fra', n: 'Francesinha', d: 'Clássica, leitosa ou colorida.', t: '+20 min', p: 20, add: true, w: 1 },
+      { id: 'art', n: 'Nail art à mão livre', d: 'Valor conforme o desenho. Envie a referência junto com o pedido.', t: 'sob medida', p: null, w: 0 }
+    ]},
+    { cat: 'Pés', note: '', items: [
+      { id: 'pes', n: 'Pés em gel', d: 'Cutilagem e esmaltação em gel, lisa ou francesinha.', t: '1h', p: 90, w: 2 }
+    ]},
+    { cat: 'Olhar', note: '', items: [
+      { id: 'sob', n: 'Design de sobrancelhas', d: 'Desenho que respeita o formato do rosto.', t: '40 min', p: 50, w: 3 },
+      { id: 'cil', n: 'Cílios', d: 'Técnica definida na avaliação, conforme o seu fio.', t: 'avaliação', p: null }
+    ]}
+  ];
+  shapes = ['Amendoado', 'Quadrado', 'Bailarina', 'Redondo'];
+  pers = ['Manhã', 'Tarde', 'Noite', 'Sábado'];
+
+  items() { return this.menu.flatMap(c => c.items); }
+  priceText(i) { return i.p == null ? 'sob consulta' : (i.add ? '+ R$ ' : 'R$ ') + i.p; }
+  wa() { return String(this.props.whatsapp ?? '').replace(/\D/g, ''); }
+  hasWa() { return this.wa().length >= 10; }
+  href(text) { return this.hasWa() ? 'https://wa.me/' + this.wa() + '?text=' + encodeURIComponent(text) : 'https://ig.me/m/larissag.naildesigner'; }
+  msg() {
+    const { sel, shape, per, nome, ref } = this.state, list = this.items().filter(i => sel[i.id]);
+    let m = 'Olá, Larissa! Vim pelo site';
+    if (!list.length && !ref) return m + ' e gostaria de agendar um horário.';
+    m += ' e quero agendar:\n' + (list.length ? list.map(i => '• ' + i.n).join('\n') : '• Um trabalho parecido com a referência');
+    if (shape) m += '\nFormato: ' + shape.toLowerCase();
+    const ps = this.pers.filter(p => per[p]);
+    if (ps.length) m += '\nMelhor período: ' + ps.join(', ').toLowerCase();
+    if (ref) m += '\nReferência: ' + ref + ' (foto do site)';
+    if (nome.trim()) m += '\nMeu nome: ' + nome.trim();
+    return m;
+  }
+
+  componentDidMount() {
+    const q = s => document.querySelector(s), qa = s => Array.from(document.querySelectorAll(s));
+    this.el = {
+      ret: q('[data-retrato]'), iris: q('[data-iris]'), cam: q('[data-cam]'), img: q('[data-cam] img'),
+      caps: qa('[data-cap]'), fills: qa('[data-seg-fill]'), labels: qa('[data-seg-label]'), hots: q('[data-hots]'),
+      strip: q('[data-strip]'), track: q('[data-track]'), frames: qa('[data-frame]'),
+      grain: q('[data-grain]'), heroName: q('[data-hero-name]'), cue: q('[data-cue]'),
+      com: q('[data-comanda]'), end: q('[data-agendar]')
+    };
+    this.reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    this.cam = null; this.stripX = 0; this.hotA = 1; this.last = performance.now();
+    this.onResize = () => { this.measure(); if (innerWidth !== this.state.vw) this.setState({ vw: innerWidth }); };
+    this.onKey = e => {
+      if (this.state.lb < 0) return;
+      if (e.key === 'Escape') this.setState({ lb: -1 });
+      else if (e.key === 'ArrowRight') this.stepLb(1);
+      else if (e.key === 'ArrowLeft') this.stepLb(-1);
+    };
+    addEventListener('resize', this.onResize);
+    addEventListener('keydown', this.onKey);
+    this.measure();
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => this.measure());
+    this.makeGrain(); this.startIntro(); this.setupReveal();
+    if (this.el.cue && !this.reduce) this.el.cue.animate([{ transform: 'translateY(-100%)' }, { transform: 'translateY(100%)' }], { duration: 2200, iterations: Infinity, easing: 'cubic-bezier(.6,0,.3,1)' });
+    const loop = t => { this.frame(t); this.raf = requestAnimationFrame(loop); };
+    this.raf = requestAnimationFrame(loop);
+    if (innerWidth !== this.state.vw) this.setState({ vw: innerWidth });
+  }
+
+  componentWillUnmount() {
+    cancelAnimationFrame(this.raf);
+    removeEventListener('resize', this.onResize); removeEventListener('keydown', this.onKey);
+    if (this.io) this.io.disconnect();
+    clearTimeout(this.toastT);
+    document.documentElement.style.overflow = '';
+  }
+
+  componentDidUpdate(pp, ps) {
+    if (this.state.lb >= 0 && ps.lb !== this.state.lb) {
+      const im = document.querySelector('[data-lb-img]');
+      if (im) im.src = this.works[this.state.lb].src;
+    }
+    if (ps.lb < 0 && this.state.lb >= 0) {
+      document.documentElement.style.overflow = 'hidden';
+      const lb = document.querySelector('[data-lb]');
+      if (lb && !this.reduce) lb.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 450, easing: 'ease-out' });
+    } else if (ps.lb >= 0 && this.state.lb < 0) document.documentElement.style.overflow = '';
+    if (ps.lb >= 0 && this.state.lb >= 0 && ps.lb !== this.state.lb) {
+      const im = document.querySelector('[data-lb-img]');
+      if (im && !this.reduce) im.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 450, easing: 'ease-out' });
+    }
+    if (ps.vw !== this.state.vw) { this.el.bar = null; this.measure(); }
+  }
+
+  measure() {
+    const e = this.el; if (!e) return;
+    const vw = innerWidth, vh = innerHeight;
+    this.vw = vw; this.vh = vh; this.narrow = vw < 760; this.L = vh * .85;
+    if (e.ret) e.ret.style.height = (vh + 4 * this.L + vh * .6) + 'px';
+    this.bh = vh * 1.04; this.bw = this.bh * 1023 / 1537;
+    if (e.cam) { e.cam.style.width = this.bw + 'px'; e.cam.style.height = this.bh + 'px'; }
+    this.shots = this.makeShots();
+    if (e.track && e.strip) {
+      this.travel = Math.max(0, e.track.offsetWidth - vw);
+      e.strip.style.height = (vh + this.travel) + 'px';
+      this.geo = e.frames.map(f => ({ c: f.offsetLeft + f.offsetWidth / 2, img: f.querySelector('img') }));
+    }
+  }
+
+  makeShots() {
+    if (this.narrow) return [
+      { fx: .5, fy: .5, z: 1, tx: .5, ty: .5 }, { fx: .62, fy: .25, z: 2, tx: .5, ty: .3 },
+      { fx: .28, fy: .43, z: 1.9, tx: .5, ty: .3 }, { fx: .43, fy: .52, z: 2.6, tx: .5, ty: .3 },
+      { fx: .56, fy: .37, z: 1.2, tx: .5, ty: .32 }
+    ];
+    let tx0 = .68;
+    if (this.el.heroName) tx0 = Math.max(tx0, (this.el.heroName.getBoundingClientRect().right + 28 + .37 * this.bw) / this.vw);
+    tx0 = Math.min(tx0, .82);
+    return [
+      { fx: .5, fy: .5, z: 1, tx: tx0, ty: .5 }, { fx: .62, fy: .25, z: 2.4, tx: .64, ty: .42 },
+      { fx: .27, fy: .43, z: 2.2, tx: .66, ty: .44 }, { fx: .43, fy: .52, z: 3, tx: .64, ty: .44 },
+      { fx: .56, fy: .36, z: 1.45, tx: .68, ty: .46 }
+    ];
+  }
+
+  camXY(c) { const X = c.tx * this.vw - c.fx * this.bw * c.z, Y = c.ty * this.vh - c.fy * this.bh * c.z; return [X, Math.max(Y, this.vh - this.bh * c.z)]; }
+  lerpShot(a, b, t) { const l = (p, q) => p + (q - p) * t; return { fx: l(a.fx, b.fx), fy: l(a.fy, b.fy), tx: l(a.tx, b.tx), ty: l(a.ty, b.ty), z: Math.exp(l(Math.log(a.z), Math.log(b.z))) }; }
+  ease(t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; }
+
+  almond(cx, cy, h) {
+    if (!this.pts) {
+      const R = 1.625, c = .625, pT = Math.acos(c / R), p = [];
+      for (let i = 0; i <= 12; i++) { const a = pT * (1 - i / 12); p.push([-c + R * Math.cos(a), -R * Math.sin(a)]); }
+      for (let i = 1; i < 18; i++) { const t = Math.PI * i / 18; p.push([Math.cos(t), Math.sin(t)]); }
+      for (let i = 0; i < 12; i++) { const a = pT * (i / 12); p.push([c - R * Math.cos(a), -R * Math.sin(a)]); }
+      this.pts = p;
+    }
+    const s = h / 2.5;
+    return 'polygon(' + this.pts.map(([x, y]) => (cx + x * s).toFixed(1) + 'px ' + (cy + (y + .25) * s).toFixed(1) + 'px').join(',') + ')';
+  }
+
+  makeGrain() {
+    const g = this.el.grain; if (!g) return;
+    const cv = document.createElement('canvas'); cv.width = cv.height = 160;
+    const ctx = cv.getContext('2d'), id = ctx.createImageData(160, 160);
+    for (let i = 0; i < id.data.length; i += 4) { const v = Math.random() * 255; id.data[i] = id.data[i + 1] = id.data[i + 2] = v; id.data[i + 3] = 255; }
+    ctx.putImageData(id, 0, 0);
+    g.style.backgroundImage = 'url(' + cv.toDataURL() + ')';
+    if (!this.reduce) g.animate([[0, 0], [-4, 3], [3, -5], [-6, -2], [5, 4], [-2, 6], [0, 0]].map(([x, y]) => ({ transform: `translate(${x}%,${y}%)`, easing: 'steps(1,end)' })), { duration: 700, iterations: Infinity });
+  }
+
+  startIntro() {
+    const e = this.el, els = Array.from(document.querySelectorAll('[data-intro]'));
+    if (!((this.props.intro ?? true) && !this.reduce && scrollY < 40 && e.iris && e.img)) return;
+    const vw = this.vw, vh = this.vh;
+    e.iris.style.clipPath = this.almond(vw / 2, vh / 2, .5);
+    els.forEach(el => { el.style.opacity = '0'; });
+    this.hotA = 0;
+    let started = false;
+    const go = () => {
+      if (started) return; started = true;
+      const [X0, Y0] = this.camXY(this.shots[0]), gx = X0 + .43 * this.bw, gy = Y0 + .52 * this.bh;
+      const shot = { fx: .43, fy: .52, z: this.narrow ? 2.3 : 2.7, tx: gx / vw, ty: gy / vh };
+      this.cam = { ...shot }; this.intro = { t: performance.now(), hold: 1150, shot };
+      const small = Math.min(vh * .22, 200), big = Math.max(vw, vh) * 3.4;
+      e.iris.style.clipPath = '';
+      const a = e.iris.animate([
+        { clipPath: this.almond(gx, gy, 1), easing: 'cubic-bezier(.2,.8,.2,1)' },
+        { clipPath: this.almond(gx, gy, small), offset: .3, easing: 'linear' },
+        { clipPath: this.almond(gx, gy, small * 1.05), offset: .42, easing: 'cubic-bezier(.76,0,.18,1)' },
+        { clipPath: this.almond(gx, gy, big) }
+      ], { duration: 2800, fill: 'both' });
+      a.onfinish = () => { e.iris.style.clipPath = 'none'; a.cancel(); };
+      els.forEach(el => {
+        el.style.opacity = '';
+        const wipe = el.getAttribute('data-intro') === 'wipe';
+        el.animate(wipe
+          ? [{ opacity: 0, transform: 'translateY(.3em)', clipPath: 'inset(0 0 100% 0)' }, { opacity: 1, transform: 'none', clipPath: 'inset(0 0 0% 0)' }]
+          : [{ opacity: 0, transform: 'translateY(14px)' }, { opacity: 1, transform: 'none' }],
+          { duration: wipe ? 1400 : 1000, delay: 2000 + (+el.getAttribute('data-intro-delay') || 0), easing: 'cubic-bezier(.2,.7,.1,1)', fill: 'backwards' });
+      });
+      this.hotStart = performance.now() + 3200;
+    };
+    if (e.img.complete && e.img.naturalWidth) go(); else { e.img.addEventListener('load', go, { once: true }); setTimeout(go, 2600); }
+  }
+
+  setupReveal() {
+    if (this.reduce || !('IntersectionObserver' in window)) return;
+    const els = Array.from(document.querySelectorAll('[data-reveal]'));
+    els.forEach(el => { if (el.getBoundingClientRect().top > innerHeight) el.style.opacity = '0'; else el.dataset.shown = '1'; });
+    this.io = new IntersectionObserver(list => list.forEach(en => {
+      if (!en.isIntersecting) return;
+      const el = en.target; this.io.unobserve(el);
+      if (el.dataset.shown) return;
+      el.dataset.shown = '1'; el.style.opacity = '';
+      el.animate([{ opacity: 0, transform: 'translateY(28px)' }, { opacity: 1, transform: 'none' }], { duration: 1100, delay: +(el.getAttribute('data-reveal') || 0), easing: 'cubic-bezier(.2,.7,.1,1)', fill: 'backwards' });
+    }), { threshold: .1 });
+    els.forEach(el => this.io.observe(el));
+  }
+
+  frame(now) {
+    const e = this.el; if (!e || !this.shots) return;
+    const dt = Math.min(64, now - this.last) / 16.67; this.last = now;
+    const K = b => (this.reduce ? 1 : 1 - Math.pow(1 - b, dt)), vw = this.vw, vh = this.vh;
+    if (this.hotStart) { this.hotA = Math.max(0, Math.min(1, (now - this.hotStart) / 700)); if (this.hotA >= 1) this.hotStart = 0; }
+    let retBottom = 0;
+    if (e.ret && e.cam) {
+      const r = e.ret.getBoundingClientRect(); retBottom = r.bottom;
+      if (r.bottom > -40 || !this.cam) {
+        const ext = Math.max(0, -r.top / this.L), raw = Math.min(4, ext);
+        let s = 4;
+        if (raw < 4) { const i = Math.floor(raw), u = raw - i; s = i + this.ease(Math.min(1, Math.max(0, (u - .18) / .64))); }
+        const i = Math.min(3, Math.floor(s));
+        let tgt = this.lerpShot(this.shots[i], this.shots[i + 1], s - i), k = K(.1);
+        if (this.intro) {
+          const t = now - this.intro.t;
+          if (t < this.intro.hold) { tgt = this.intro.shot; k = 1; } else if (t < this.intro.hold + 2600) k = K(.03); else this.intro = null;
+        }
+        if (!this.cam) this.cam = { ...tgt };
+        const c = this.cam;
+        c.fx += (tgt.fx - c.fx) * k; c.fy += (tgt.fy - c.fy) * k; c.tx += (tgt.tx - c.tx) * k; c.ty += (tgt.ty - c.ty) * k;
+        c.z = Math.exp(Math.log(c.z) + (Math.log(tgt.z) - Math.log(c.z)) * k);
+        const [X, Y] = this.camXY(c);
+        e.cam.style.transform = `translate3d(${X.toFixed(2)}px,${Y.toFixed(2)}px,0) scale(${c.z.toFixed(4)})`;
+        if (this.lastS === undefined || Math.abs(s - this.lastS) > .0005) {
+          this.lastS = s;
+          e.caps.forEach((el, j) => {
+            const d = s - j, o = Math.max(0, Math.min(1, 1 - Math.abs(d) * 2.4));
+            el.style.opacity = o.toFixed(3); el.style.transform = `translate3d(0,${(-d * 26).toFixed(1)}px,0)`;
+            el.style.visibility = o < .01 ? 'hidden' : 'visible'; el.style.pointerEvents = o > .6 ? 'auto' : 'none';
+          });
+          e.fills.forEach((el, j) => { el.style.transform = `scaleX(${Math.max(0, Math.min(1, ext + 1 - j)).toFixed(3)})`; });
+          const act = Math.round(s);
+          e.labels.forEach((el, j) => { el.style.opacity = j === act ? '1' : '.45'; });
+        }
+        if (e.hots) { const o = Math.max(0, 1 - s * 4) * this.hotA; e.hots.style.opacity = o.toFixed(3); e.hots.style.pointerEvents = o > .5 ? 'auto' : 'none'; }
+      }
+    }
+    if (e.strip && e.track && this.geo) {
+      const r = e.strip.getBoundingClientRect();
+      if (r.bottom > -60 && r.top < vh + 60) {
+        const p = this.travel > 0 ? Math.max(0, Math.min(1, -r.top / this.travel)) : 0;
+        this.stripX += (-p * this.travel - this.stripX) * K(.12);
+        e.track.style.transform = `translate3d(${this.stripX.toFixed(2)}px,0,0)`;
+        const rack = (this.props.rackFocus ?? false) && !this.narrow && !this.reduce;
+        this.geo.forEach((g, j) => {
+          const d = (g.c + this.stripX - vw / 2) / vw, f = Math.max(0, Math.min(1, 1 - Math.abs(d) * 1.7)), fr = e.frames[j];
+          fr.style.opacity = (.4 + .6 * f).toFixed(3); fr.style.transform = `scale(${(.94 + .06 * f).toFixed(4)})`;
+          fr.style.filter = rack ? `blur(${((1 - f) * 2.4).toFixed(2)}px)` : 'none';
+          if (g.img) g.img.style.transform = `translate3d(${(-d * 44).toFixed(1)}px,0,0)`;
+        });
+      }
+    }
+    if (this.narrow) {
+      if (!this.el.bar || !this.el.bar.isConnected) this.el.bar = document.querySelector('[data-bar]');
+      const bar = this.el.bar;
+      if (bar) {
+        const inView = el => { if (!el) return false; const r = el.getBoundingClientRect(); return r.top < vh * .85 && r.bottom > vh * .15; };
+        const show = retBottom < vh * .5 && !inView(e.com) && !inView(e.end);
+        if (show !== this.barOn) { this.barOn = show; bar.style.transform = show ? 'translateY(0)' : 'translateY(140%)'; }
+      }
+    }
+  }
+
+  scrollToId(id) { const el = document.getElementById(id); if (el) scrollTo({ top: el.getBoundingClientRect().top + scrollY - (id === 'comanda' ? 80 : 0), behavior: this.reduce ? 'auto' : 'smooth' }); }
+  showToast(t) { clearTimeout(this.toastT); this.setState({ toast: t }); this.toastT = setTimeout(() => this.setState({ toast: '' }), 4200); }
+
+  goShot = ev => { const i = +ev.currentTarget.dataset.idx || 0; scrollTo({ top: this.el.ret.getBoundingClientRect().top + scrollY + i * this.L + (i ? 2 : 0), behavior: this.reduce ? 'auto' : 'smooth' }); };
+  openLb = ev => this.setState({ lb: +ev.currentTarget.dataset.idx || 0 });
+  closeLb = () => this.setState({ lb: -1 });
+  stepLb = d => this.setState(s => ({ lb: (s.lb + d + this.works.length) % this.works.length }));
+  prevLb = ev => { ev.stopPropagation(); this.stepLb(-1); };
+  nextLb = ev => { ev.stopPropagation(); this.stepLb(1); };
+  stop = ev => ev.stopPropagation();
+  wantWork = ev => {
+    ev.stopPropagation();
+    const w = this.works[this.state.lb];
+    this.setState(s => ({ lb: -1, sel: { ...s.sel, [w.svc]: true }, ref: w.title }), () => setTimeout(() => this.scrollToId(this.narrow ? 'comanda' : 'cardapio'), 60));
+  };
+  toggle = ev => { const id = ev.currentTarget.dataset.id; this.setState(s => ({ sel: { ...s.sel, [id]: !s.sel[id] } })); };
+  pickShape = ev => { const v = ev.currentTarget.dataset.v; this.setState(s => ({ shape: s.shape === v ? '' : v })); };
+  pickPer = ev => { const v = ev.currentTarget.dataset.v; this.setState(s => ({ per: { ...s.per, [v]: !s.per[v] } })); };
+  setNome = ev => this.setState({ nome: ev.target.value });
+  sendOrder = () => {
+    if (this.hasWa()) return;
+    const m = this.msg();
+    if (navigator.clipboard) navigator.clipboard.writeText(m).catch(() => {});
+    this.showToast('Pedido copiado. Cole no direct da Larissa.');
+  };
+  barClick = ev => { if (this.count() > 0) { ev.preventDefault(); this.scrollToId('comanda'); } };
+  count() { return this.items().filter(i => this.state.sel[i.id]).length; }
+
+  renderVals() {
+    const { vw, lb, sel, shape, per, nome, ref, toast } = this.state;
+    const w = lb >= 0 ? this.works[lb] : null, wa = this.hasWa(), showPrices = this.props.mostrarPrecos ?? true;
+    const list = this.items().filter(i => sel[i.id]), n = list.length;
+    const sum = list.reduce((a, i) => a + (i.p || 0), 0), open = list.some(i => i.p == null);
+    const cats = this.menu.map(c => ({ cat: c.cat, note: showPrices ? c.note : '', items: c.items.map(i => ({
+      id: i.id, n: i.n, d: i.d, t: i.t, pt: this.priceText(i), pressed: sel[i.id] ? 'true' : 'false',
+      circle: sel[i.id] ? '#121110' : 'transparent', check: sel[i.id] ? 1 : 0, rowBg: sel[i.id] ? 'rgba(18,17,16,.05)' : 'rgba(18,17,16,0)',
+      hasW: i.w != null, w: i.w
+    })) }));
+    const v = {
+      wide: vw >= 760, narrow: vw < 760, showPrices, cats,
+      cidade: this.props.cidade || 'Bairro · Cidade', horarios: this.props.horarios || 'Atendimento com hora marcada',
+      grain: this.props.grain ?? .02,
+      bookHref: this.href('Olá, Larissa! Vim pelo site e gostaria de agendar um horário.'),
+      channelName: wa ? 'WhatsApp' : 'Direct do Instagram',
+      order: list.map(i => ({ id: i.id, n: i.n, pt: this.priceText(i) })), empty: n === 0 && !ref,
+      countText: n ? n + (n > 1 ? ' serviços' : ' serviço') : '',
+      hasRef: !!ref, ref, nome,
+      totalText: sum ? 'R$ ' + sum + (open ? ' +' : '') : (open ? 'sob consulta' : 'R$ 0'),
+      orderHref: this.href(this.msg()),
+      ctaLabel: n || ref ? (wa ? 'Enviar pedido no WhatsApp' : 'Copiar pedido e abrir o direct') : 'Agendar horário',
+      channelNote: wa ? 'O pedido abre pronto no WhatsApp.' : 'O pedido é copiado para você colar no direct.',
+      barLabel: n ? 'Revisar pedido · ' + n : 'Agendar horário',
+      barHref: n ? '#comanda' : this.href('Olá, Larissa! Vim pelo site e gostaria de agendar um horário.'),
+      hasToast: !!toast, toast,
+      goShot: this.goShot, openLb: this.openLb, closeLb: this.closeLb, prevLb: this.prevLb, nextLb: this.nextLb, stop: this.stop,
+      wantWork: this.wantWork, toggle: this.toggle, pickShape: this.pickShape, pickPer: this.pickPer, setNome: this.setNome,
+      sendOrder: this.sendOrder, barClick: this.barClick,
+      lbOpen: !!w, lbSrc: w ? w.src : '', lbTitle: w ? w.title : '', lbDesc: w ? w.desc : '', lbCount: w ? (lb + 1) + ' / ' + this.works.length : ''
+    };
+    this.shapes.forEach((s, i) => { const on = shape === s; v['sh' + i + 'bg'] = on ? '#f1ece5' : 'transparent'; v['sh' + i + 'fg'] = on ? '#030303' : '#f1ece5'; });
+    this.pers.forEach((p, i) => { const on = !!per[p]; v['pe' + i + 'bg'] = on ? '#f1ece5' : 'transparent'; v['pe' + i + 'fg'] = on ? '#030303' : '#f1ece5'; });
+    return v;
+  }
+}
+</script>
+</body>
+</html>

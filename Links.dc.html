@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Larissa G. · Links</title>
+<meta name="description" content="Agende com Larissa G., nail designer. Cardápio, valores, trabalhos e contato.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600&family=Tenor+Sans&display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;background:#030303;color:#f1ece5;font-family:'Schibsted Grotesk',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#f1ece5;text-decoration:none}
+a:hover{color:#d9b6a3}
+:focus-visible{outline:1px solid #d9b6a3;outline-offset:3px}
+</style>
+</helmet>
+<main style="min-height:100svh;display:flex;justify-content:center;background:#030303;">
+<div style="width:100%;max-width:440px;padding:44px 20px 36px;box-sizing:border-box;display:flex;flex-direction:column;">
+
+<div data-in="" style="display:flex;flex-direction:column;align-items:center;text-align:center;">
+<div style="position:relative;width:112px;aspect-ratio:4/5;overflow:hidden;background:#050505;clip-path:polygon(50.0% 0.0%,57.2% 2.7%,64.0% 6.0%,70.4% 9.8%,76.3% 14.1%,81.6% 18.8%,86.4% 23.9%,90.4% 29.4%,93.8% 35.2%,96.5% 41.2%,98.4% 47.3%,99.6% 53.6%,100.0% 60.0%,99.2% 66.9%,97.0% 73.7%,93.3% 80.0%,88.3% 85.7%,82.1% 90.6%,75.0% 94.6%,67.1% 97.6%,58.7% 99.4%,50.0% 100.0%,41.3% 99.4%,32.9% 97.6%,25.0% 94.6%,17.9% 90.6%,11.7% 85.7%,6.7% 80.0%,3.0% 73.7%,0.8% 66.9%,0.0% 60.0%,0.4% 53.6%,1.6% 47.3%,3.5% 41.2%,6.2% 35.2%,9.6% 29.4%,13.6% 23.9%,18.4% 18.8%,23.7% 14.1%,29.6% 9.8%,36.0% 6.0%,42.8% 2.7%);"><img src="assets/larissa-retrato.jpg" alt="Larissa G." style="position:absolute;width:240%;height:auto;left:-97.8%;top:-21.3%;max-width:none;display:block;"></div>
+<h1 style="margin:22px 0 0;font:400 24px/1 'Tenor Sans',sans-serif;letter-spacing:.3em;text-transform:uppercase;padding-left:.3em;">Larissa G.</h1>
+<div style="margin-top:12px;font:500 10px/1.4 'Schibsted Grotesk',sans-serif;letter-spacing:.26em;text-transform:uppercase;color:#d9b6a3;">Nail designer · {{ cidade }}</div>
+<p style="margin:16px 0 0;max-width:30ch;font:400 15px/1.55 'Schibsted Grotesk',sans-serif;color:#cfc8bf;">Unhas em gel, nail art, pés, sobrancelhas e cílios. Atendimento individual, com hora marcada.</p>
+</div>
+
+<a data-in="" href="{{ bookHref }}" target="_blank" rel="noopener" style="margin-top:30px;display:flex;justify-content:center;align-items:center;min-height:58px;background:#f1ece5;color:#030303;font:600 11px/1 'Schibsted Grotesk',sans-serif;letter-spacing:.22em;text-transform:uppercase;transition:background .4s;" style-hover="background:#d9b6a3;color:#030303;">{{ bookLabel }}</a>
+
+<nav data-in="" style="margin-top:12px;display:flex;flex-direction:column;border-top:1px solid rgba(241,236,229,.14);">
+<a href="{{ menuHref }}" style="display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:62px;border-bottom:1px solid rgba(241,236,229,.14);transition:padding .4s;" style-hover="padding-left:8px;color:#d9b6a3;"><span style="display:flex;flex-direction:column;gap:5px;"><span style="font:400 18px/1.2 'Tenor Sans',sans-serif;">Cardápio e valores</span><span style="font:400 13px/1.3 'Schibsted Grotesk',sans-serif;color:#a9a299;">Monte seu pedido em um minuto</span></span><span aria-hidden="true" style="font:400 16px/1 'Schibsted Grotesk',sans-serif;">→</span></a>
+<a href="{{ worksHref }}" style="display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:62px;border-bottom:1px solid rgba(241,236,229,.14);transition:padding .4s;" style-hover="padding-left:8px;color:#d9b6a3;"><span style="display:flex;flex-direction:column;gap:5px;"><span style="font:400 18px/1.2 'Tenor Sans',sans-serif;">Trabalhos recentes</span><span style="font:400 13px/1.3 'Schibsted Grotesk',sans-serif;color:#a9a299;">Veja e peça um parecido</span></span><span aria-hidden="true" style="font:400 16px/1 'Schibsted Grotesk',sans-serif;">→</span></a>
+<a href="{{ fbHref }}" style="display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:62px;border-bottom:1px solid rgba(241,236,229,.14);transition:padding .4s;" style-hover="padding-left:8px;color:#d9b6a3;"><span style="display:flex;flex-direction:column;gap:5px;"><span style="font:400 18px/1.2 'Tenor Sans',sans-serif;">Feedbacks das clientes</span><span style="font:400 13px/1.3 'Schibsted Grotesk',sans-serif;color:#a9a299;">Quem já sentou na cadeira</span></span><span aria-hidden="true" style="font:400 16px/1 'Schibsted Grotesk',sans-serif;">→</span></a>
+<a href="{{ mapHref }}" target="{{ mapTarget }}" rel="noopener" style="display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:62px;border-bottom:1px solid rgba(241,236,229,.14);transition:padding .4s;" style-hover="padding-left:8px;color:#d9b6a3;"><span style="display:flex;flex-direction:column;gap:5px;"><span style="font:400 18px/1.2 'Tenor Sans',sans-serif;">Como chegar</span><span style="font:400 13px/1.3 'Schibsted Grotesk',sans-serif;color:#a9a299;">{{ cidade }}</span></span><span aria-hidden="true" style="font:400 16px/1 'Schibsted Grotesk',sans-serif;">→</span></a>
+<a href="https://ig.me/m/larissag.naildesigner" target="_blank" rel="noopener" style="display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:62px;border-bottom:1px solid rgba(241,236,229,.14);transition:padding .4s;" style-hover="padding-left:8px;color:#d9b6a3;"><span style="display:flex;flex-direction:column;gap:5px;"><span style="font:400 18px/1.2 'Tenor Sans',sans-serif;">Direct do Instagram</span><span style="font:400 13px/1.3 'Schibsted Grotesk',sans-serif;color:#a9a299;">@larissag.naildesigner</span></span><span aria-hidden="true" style="font:400 16px/1 'Schibsted Grotesk',sans-serif;">↗</span></a>
+</nav>
+
+<div data-in="" style="margin-top:30px;">
+<div style="display:flex;justify-content:space-between;align-items:baseline;font:500 10px/1 'Schibsted Grotesk',sans-serif;letter-spacing:.24em;text-transform:uppercase;color:#a9a299;"><span>Últimos trabalhos</span><a href="{{ worksHref }}" style="color:#f1ece5;">Ver todos</a></div>
+<div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-top:14px;">
+<a href="{{ worksHref }}" style="position:relative;display:block;aspect-ratio:3/4;overflow:hidden;background:#111;"><img src="assets/trabalho-a.jpg" alt="Francesinha temática" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%;"></a>
+<a href="{{ worksHref }}" style="position:relative;display:block;aspect-ratio:3/4;overflow:hidden;background:#111;"><img src="assets/trabalho-d.jpg" alt="Francesinha leitosa" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:55% 30%;"></a>
+<a href="{{ worksHref }}" style="position:relative;display:block;aspect-ratio:3/4;overflow:hidden;background:#111;"><img src="assets/trabalho-c.jpg" alt="Pés com francesinha" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:45% 70%;"></a>
+</div>
+</div>
+
+<div data-in="" style="margin-top:auto;padding-top:36px;display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center;">
+<div style="font:400 13px/1.5 'Schibsted Grotesk',sans-serif;color:#a9a299;">{{ horarios }}</div>
+<a href="{{ siteHref }}" style="font:500 10px/1 'Schibsted Grotesk',sans-serif;letter-spacing:.24em;text-transform:uppercase;color:#f1ece5;padding-bottom:5px;border-bottom:1px solid rgba(241,236,229,.3);">Site completo</a>
+</div>
+</div>
+</main>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:420,&quot;height&quot;:900},&quot;whatsapp&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Contato&quot;},&quot;cidade&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Bairro · Cidade&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Contato&quot;},&quot;horarios&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Atendimento com hora marcada&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Contato&quot;},&quot;mapsUrl&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Links&quot;},&quot;siteUrl&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Links&quot;}}">
+class Component extends DCLogic {
+  componentDidMount() {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    document.querySelectorAll('[data-in]').forEach((el, i) => el.animate(
+      [{ opacity: 0, transform: 'translateY(18px)' }, { opacity: 1, transform: 'none' }],
+      { duration: 900, delay: 120 + i * 110, easing: 'cubic-bezier(.2,.7,.1,1)', fill: 'backwards' }));
+  }
+  renderVals() {
+    const wa = String(this.props.whatsapp ?? '').replace(/\D/g, ''), hasWa = wa.length >= 10;
+    const site = this.props.siteUrl || 'Larissa G v2.dc.html', maps = this.props.mapsUrl || '';
+    return {
+      cidade: this.props.cidade || 'Bairro · Cidade',
+      horarios: this.props.horarios || 'Atendimento com hora marcada',
+      bookHref: hasWa ? 'https://wa.me/' + wa + '?text=' + encodeURIComponent('Olá, Larissa! Vim pelo Instagram e gostaria de agendar um horário.') : 'https://ig.me/m/larissag.naildesigner',
+      bookLabel: hasWa ? 'Agendar pelo WhatsApp' : 'Agendar horário',
+      siteHref: site, menuHref: site + '#cardapio', worksHref: site + '#trabalhos', fbHref: site + '#feedbacks',
+      mapHref: maps || site + '#estudio', mapTarget: maps ? '_blank' : '_self'
+    };
+  }
+}
+</script>
+</body>
+</html>
