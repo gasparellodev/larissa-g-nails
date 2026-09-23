@@ -957,6 +957,7 @@
         this.logic.__host = this;
         if (prevState)
           this.logic.state = { ...this.logic.state || {}, ...prevState };
+        this.__committedLogicState = this.logic.state;
       }
       /** The props the author's logic + template see — internal __-prefixed
        *  wiring stripped. */
@@ -1000,6 +1001,8 @@
       }
       componentDidUpdate(prevProps) {
         this.logic.props = this.__userProps();
+        const prevLogicState = this.__committedLogicState;
+        this.__committedLogicState = this.logic.state;
         if (this.__needsDidMount) {
           if (this.state.__err || !registry.get(this.__name).tpl) return;
           this.__needsDidMount = false;
@@ -1010,7 +1013,7 @@
           }
         } else {
           try {
-            this.logic.componentDidUpdate(prevProps);
+            this.logic.componentDidUpdate(prevProps, prevLogicState);
           } catch (e) {
             console.error(e);
           }
